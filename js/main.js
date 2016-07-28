@@ -441,33 +441,34 @@ var profilesKey = 'ds2_profiles';
         var jets = [new Jets({
             searchTag: '#playthrough_search',
             contentTag: '#playthrough_list ul'
-        }), new Jets({
-            searchTag: '#item_search',
-            contentTag: '#item_list ul'
-        }), new Jets({
-            searchTag: '#weapons_search',
-            contentTag: '#weapons_list ul'
-        }), new Jets({
-            searchTag: '#armors_search',
-            contentTag: '#armors_list ul'
-        })];
+        // }), new Jets({
+        //     searchTag: '#item_search',
+        //     contentTag: '#item_list ul'
+        // }), new Jets({
+        //     searchTag: '#weapons_search',
+        //     contentTag: '#weapons_list ul'
+        // }), new Jets({
+        //     searchTag: '#armors_search',
+        //     contentTag: '#armors_list ul'
+        })
+        ];
 
         $('#playthrough_search').keyup(function() {
             $('#playthrough_list').unhighlight();
             $('#playthrough_list').highlight($(this).val());
         });
-        $('#item_search').keyup(function() {
-            $('#item_list').unhighlight();
-            $('#item_list').highlight($(this).val());
-        });
-        $('#weapons_search').keyup(function() {
-            $('#weapons_list').unhighlight();
-            $('#weapons_list').highlight($(this).val());
-        });
-        $('#armors_search').keyup(function() {
-            $('#armors_list').unhighlight();
-            $('#armors_list').highlight($(this).val());
-        });
+        // $('#item_search').keyup(function() {
+        //     $('#item_list').unhighlight();
+        //     $('#item_list').highlight($(this).val());
+        // });
+        // $('#weapons_search').keyup(function() {
+        //     $('#weapons_list').unhighlight();
+        //     $('#weapons_list').highlight($(this).val());
+        // });
+        // $('#armors_search').keyup(function() {
+        //     $('#armors_list').unhighlight();
+        //     $('#armors_list').highlight($(this).val());
+        // });
     });
 
     /*
