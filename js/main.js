@@ -441,9 +441,9 @@ var profilesKey = 'ds2_profiles';
         var jets = [new Jets({
             searchTag: '#playthrough_search',
             contentTag: '#playthrough_list ul'
-        // }), new Jets({
-        //     searchTag: '#item_search',
-        //     contentTag: '#item_list ul'
+        }), new Jets({
+            searchTag: '#item_search',
+            contentTag: '#item_list ul'
         // }), new Jets({
         //     searchTag: '#weapons_search',
         //     contentTag: '#weapons_list ul'
@@ -457,10 +457,10 @@ var profilesKey = 'ds2_profiles';
             $('#playthrough_list').unhighlight();
             $('#playthrough_list').highlight($(this).val());
         });
-        // $('#item_search').keyup(function() {
-        //     $('#item_list').unhighlight();
-        //     $('#item_list').highlight($(this).val());
-        // });
+        $('#item_search').keyup(function() {
+            $('#item_list').unhighlight();
+            $('#item_list').highlight($(this).val());
+        });
         // $('#weapons_search').keyup(function() {
         //     $('#weapons_list').unhighlight();
         //     $('#weapons_list').highlight($(this).val());
